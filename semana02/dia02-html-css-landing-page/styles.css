@@ -152,7 +152,6 @@ a {
 /* TODO: COLLABORATION SECTION - Maquetar y aplicar estilos en esta sección */
 
 .collaboration {
-  border: 1px solid red;
 
   display: flex;
   justify-content: center;
@@ -194,4 +193,52 @@ a {
 /* TODO: TESTIMONIALS SECTION - Maquetar y aplicar estilos en esta sección */
 
 .testimonials {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  padding-top: 8rem;
+  
 }
+
+.testimonial{
+  width: 25rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: hsl(219, 30%, 18%);
+}
+.testimonial__text{
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.profile{
+  display: flex;
+  gap: 1rem;
+}
+
+.profile__image{
+  width: 2rem;
+  border-radius: 10rem;
+}
+
+.profile__details{
+  font-family: "Raleway", sans-serif;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 0.4rem;
+}
+
+.profile__details h3{
+  font-size: 0.8rem;
+}
+.profile__details h4{
+  font-size: 0.5rem;
+  font-weight: 100;
+}
+  

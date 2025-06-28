@@ -80,6 +80,10 @@ header {
   gap: 3rem;
 }
 
+.header__menu-checkbox {
+  display: none;
+}
+
 .header__links {
   font-size: .9rem;
   font-weight: var(--font-weight-bold);
@@ -118,6 +122,24 @@ header {
   background: var(--primary-cyan);
 }
 
+.header label{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header label{
+    display: flex;
+  }
+  .header__links-menu {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .header__links--menu {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+/*GET STARTED*/
 .get-started {
   align-items: center;
   display: flex;
@@ -126,13 +148,14 @@ header {
   padding: 6rem 2rem;
   padding-bottom: 12rem;
   position: relative;
+  overflow: hidden;
 }
 
 .get-started img {
     right: -100px;
     position: absolute;
     right: -200px;
-    overflow: hidden;
+    object-fit: contain;
 }
 
 .get_started_description {
@@ -159,6 +182,23 @@ header {
   margin-top: 2rem;
   color: var(--neutral-white);
   background: var(--primary-cyan);
+}
+
+@media (max-width: 1200px) {
+  .get-started {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 2rem 0 2rem ;
+    padding-bottom: 8rem;
+  }
+
+  .get-started img {
+    all: unset;
+    position: relative;
+    right: -200px;
+
+  }
+
 }
 
 /*SHORTEN IN*/
@@ -206,6 +246,20 @@ header {
   display: flex;
   flex-basis: 20%;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .shorten-it{
+    display: flex;
+    flex-direction: column;
+  }
+  .shorten-it_box{
+    width: 100%;  
+  }
+  .shorten-it_button{
+    width: 100%;
+  }
+
 }
 
 /*STATICS*/
@@ -301,6 +355,39 @@ header {
     width: 16rem;
 }
 
+@media (max-width: 1200px) {
+
+  .statics{
+    padding-bottom: 20rem;
+  }
+  .statics_intro{
+    margin-bottom: 30rem;
+  }
+  .features{
+    display:flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+  }
+  .feature{
+    top: -8rem;
+  }
+  .f1{
+    left: -5rem;
+    transform: rotate(270deg);
+  }
+  .f2{
+    left: 15rem;
+    transform: rotate(270deg);
+  }
+
+  .f3{
+    right: -5rem;
+    transform: rotate(270deg);
+  }
+
+
+}
+
 .boost-up{
   
 
@@ -355,7 +442,7 @@ header {
 .footer__box{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: .5rem;
 
 }
 
@@ -373,7 +460,7 @@ header {
   font-size: .8rem;
   font-weight: var(--font-weight-bold);
   display: flex;
-  gap: .5rem;
+  gap: .4rem;
   color: var(--neutral-gray);
 
 }
@@ -383,4 +470,18 @@ header {
  grid-template-columns: repeat(4, 1fr); /* O simplemente define las columnas */
  column-gap: 2rem;
 
+}
+@media (max-width: 1200px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+  }
+  .footer__menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }

@@ -11,9 +11,19 @@
 
   <header class="header wrapper">
     <div class="header__wrapper">
+      <label for="menu">
+        <img class="header__menu" src="./images/icon-menu.svg" />
+      </label>
+
+      <input class="header__menu-checkbox" id="menu" type="checkbox" />
+
       <img class="header__logo" src="./images/logo.svg" />
 
-      <nav class="header__links">
+      <nav class="header__links header__links--menu">
+        <label for="menu">
+          <img src="./images/icon-close.svg" width="12" />
+        </label>
+
         <a href="">Collections</a>
         <a href="">Men</a>
         <a href="">Women</a>
@@ -30,7 +40,18 @@
 
   <main class="product-detail wrapper">
     <section class="gallery">
-      <img class="gallery__cover" src="./images/image-product-1.jpg" />
+
+      <div class="gallery__cover--wrapper">
+        <div class="gallery__prev-button">
+          <img src="./images/icon-previous.svg" />
+        </div>
+        
+        <img class="gallery__cover" src="./images/image-product-1.jpg" />
+        
+        <div class="gallery__next-button">
+          <img src="./images/icon-next.svg" />
+        </div>
+      </div>
 
       <div class="gallery__slider">
         <div class="gallery__slider--active">
@@ -55,7 +76,7 @@
           <span class="product__amount">$125.00</span>
           <span class="product__discount">50%</span>
         </div>
-        <span class="product__price-with-discount">$250.00</span>
+        <s class="product__price-with-discount">$250.00</s>
       </div>
 
       <form class="product__form">

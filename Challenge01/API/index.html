@@ -13,28 +13,30 @@
    <header class="header wrapper">
     <div class="header__wrapper">
       <img class="header__logo" src="./images/logo.svg" />
-
-      <nav class="header__links header__links-menu">
-        <a href="">Features</a>
-        <a href="">Pricing</a>
-        <a href="">Resources</a>
-      </nav>
+      <div class="header__nav">
+        <nav class="header__links header__links-menu">
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">Resources</a>
+        </nav>
+        
+        <div class="header__register header__links-menu">
+          <button class="login_button">
+            Login
+          </button>
+          
+          <button class="sign-up_button">
+            Sign up
+          </button>
+        </div>
+        
+        <label for="menu">
+          <img class="header__menu" src="./images/icon-menu.svg" />
+        </label>
+        <input class="header__menu-checkbox" id="menu" type="checkbox" />
+      
+      </div>
     </div>
-
-    <div class="header__register header__links-menu">
-      <button class="login_button">
-        Login
-      </button>
-
-      <button class="sign-up_button">
-        Sign up
-      </button>
-    </div>
-    <label for="menu">
-      <img class="header__menu" src="./images/icon-menu.svg" />
-    </label>
-
-    <input class="header__menu-checkbox" id="menu" type="checkbox" />
 
   </header>
   <main>
